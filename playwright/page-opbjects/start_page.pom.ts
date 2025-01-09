@@ -14,7 +14,7 @@ export class StartPage extends BasePage{
     }
 
     async goto(){
-        await this.page.goto('https://start.duckduckgo.com/');
+        await this.page.goto('/');
     }
 
     async search_for(q: string){

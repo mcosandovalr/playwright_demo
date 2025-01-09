@@ -20,7 +20,7 @@ export class ResultsPage extends BasePage{
     }
 
     async get_results_count(){
-        this._results_count = Number(this._results_search.count());
+        this._results_count = Number(await this._results_search.count());
         console.log(` >result count: ${this._results_count}`)
 
         return this._results_count;

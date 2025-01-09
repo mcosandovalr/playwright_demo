@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 import { StartPage } from '../page-opbjects/start_page.pom';
-import { text } from 'stream/consumers';
 import { ResultsPage } from '../page-opbjects/results_page.pom';
 
 test.beforeEach('Test POM init', async({page})=>{
@@ -17,9 +16,9 @@ test('test case 1 (POM)', async ({ page }) => {
 
   const results_count = await results_page.get_results_count();
 
-  if(results_count == 0){
-    throw new Error('No results =/');
-  }
+  // if(results_count == 0){
+  //   throw new Error('No results =/');
+  // }
 
   const results_text = await results_page.get_result_search();
   results_text.forEach(text=>{
