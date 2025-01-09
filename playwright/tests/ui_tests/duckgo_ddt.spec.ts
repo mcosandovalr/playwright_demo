@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { StartPage } from '../page-opbjects/start_page.pom';
-import { ResultsPage } from '../page-opbjects/results_page.pom';
-import test_data from '../test-data/search_data.td.json';
+import { StartPage } from '../../page-opbjects/start_page.pom';
+import { ResultsPage } from '../../page-opbjects/results_page.pom';
+import test_data from '../../test-data/search_data.td.json';
 
 // Dynamically create a test suite for each word
 test_data.forEach(({ word }) => {

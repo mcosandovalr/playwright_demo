@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { StartPage } from '../page-opbjects/start_page.pom';
-import { ResultsPage } from '../page-opbjects/results_page.pom';
+import { StartPage } from '../../page-opbjects/start_page.pom';
+import { ResultsPage } from '../../page-opbjects/results_page.pom';
 
 test.beforeEach('Test POM init', async({page})=>{
   const start_page = new StartPage(page);
